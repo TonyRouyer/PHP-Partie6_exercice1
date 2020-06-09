@@ -1,6 +1,3 @@
-<?php
-
-?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
     <head>
@@ -11,11 +8,10 @@
     <body>
         <a href="index.php?lastname=Nemare&amp;firstname=Jean">Clique ici !</a>
         <?php 
+            //si firstname et lastname sont defini -> les recupère et affiche le echo
             if (isset($_GET['firstname']) && isset($_GET['lastname'])) {
                 echo '<p>' . $_GET['firstname'] . ' ' . $_GET['lastname'] . ' est bien présent !</p>';
             }
-
         ?>
-
     </body>
 </html>
